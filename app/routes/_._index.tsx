@@ -1,8 +1,8 @@
 import { useLoaderData } from "react-router";
+import { DEFAULT_URL } from "~/util";
 
-export const loader = async ({ params }: { params: { url: string } }) => {
-  console.log({ params });
-  const url = decodeURIComponent(params.url);
+export const loader = async ({}: { params: { url: string } }) => {
+  const url = DEFAULT_URL;
   await new Promise((resolve) => setTimeout(resolve, 500));
 
   return {
