@@ -3,7 +3,7 @@ import { DEFAULT_URL } from "~/util";
 
 export const loader = async ({ params }: { params: { url: string } }) => {
   const url = DEFAULT_URL;
-  await new Promise((resolve) => setTimeout(resolve, 600));
+  await new Promise((resolve) => setTimeout(resolve, 4_000));
 
   return {
     settings: {
